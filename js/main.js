@@ -11,6 +11,10 @@ function openAnimatedLink(button, link) {
     document.getElementById('navigation-icon').style.opacity = 1;
 
     setTimeout(function(){ 
+        navView.removeAttribute('style');
+        
+        document.getElementById('navigation-icon').style.opacity = 0;
+
         window.open(link, '_top');
     }, 500); 
 }
