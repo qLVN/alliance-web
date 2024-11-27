@@ -78,3 +78,29 @@ header .right-panel div:hover, header .link-wrapper:hover {
 header .right-panel div:active, header .link-wrapper:hover {
     background-color: #e1e1e1;
 }
+
+#navigation-view {
+    position: fixed;
+    background-color: white;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    top: 25px;
+    left: 25px;
+    z-index: 1000;
+
+    pointer-events: none;
+    opacity: 0;
+
+    transition: 0.2s ease-out;
+}
+
+#navigation-view img {
+    position: absolute;
+    height: 15vw;
+    top: calc(50% - 7.5vw);
+    left: calc(50% - 7.5vw);
+    pointer-events: none;
+    transition: 0.3s ease-in;
+
+    opacity: 0;
+}
