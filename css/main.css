@@ -1,0 +1,80 @@
+:root {
+    --primaryRed: #bb212d;
+    --secondaryRed: #922b33;
+    --primaryYellow: #f8c603;
+    --gray1: #e7e7e7;
+    --gray2: #343434;
+
+    --headerHeight: 80px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: var(--headerHeight);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1px solid var(--gray1);
+    z-index: 999;
+
+    backdrop-filter: blur(10px);
+    background-color: #fffc;
+}
+
+header .link-wrapper {
+    display: inline-block;
+    height: 100%;
+    width: 240px;
+    cursor: pointer;
+    transition: ease-out 0.1s background-color;
+}
+
+header .link-wrapper img {
+    height: 100%;
+}
+
+header .link-wrapper .title {
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    font-size: 18pt;
+    top: calc(50% - 18px);
+}
+
+header .right-panel {
+    position: absolute;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    margin-right: 20px;
+}
+
+header .right-panel div {
+    padding: 0px 15px;
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    transition: ease-out 0.1s background-color;
+}
+
+header .right-panel div a {
+    text-decoration: none;
+    color: var(--gray2);
+    position: relative;
+    top: calc(50% - 12px);
+}
+
+header .right-panel div:hover, header .link-wrapper:hover {
+    background-color: #ededed;
+}
+
+header .right-panel div:active, header .link-wrapper:hover {
+    background-color: #e1e1e1;
+}
