@@ -1,3 +1,11 @@
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      document.documentElement.style.setProperty('--headerHeight', '60px');
+    } else {
+      document.documentElement.style.setProperty('--headerHeight', '80px');
+    }
+});
+
 function openAnimatedLink(button, link) {
     navView = document.getElementById('navigation-view');
 

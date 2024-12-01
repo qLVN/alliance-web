@@ -1,0 +1,186 @@
+.content-banner {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    margin-top: var(--headerHeight);
+    background-color: var(--secondaryRed);
+}
+
+.content-banner .title {
+    color: white;
+    font-size: 24pt;
+    /* font-size: 3vw; */
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    width: 90%;
+    margin: 50px 5% 0px 5%;
+
+    font-family: 'PT Serif Caption';
+    font-style: italic;
+
+    opacity: 0;
+    animation: elem-fade 0.3s 0.3s ease-out forwards;
+}
+
+.content-banner .subtitle {
+    color: white;
+    font-size: 12pt;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 10px;
+
+    opacity: 0;
+    animation: elem-fade 0.3s 0.5s ease-out forwards;
+
+}
+
+.content-banner img {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.content-banner img:nth-child(even) {
+    transform: rotate(180deg);
+    right: 0px;
+}
+
+.content-wrapper {
+    min-height: calc(100vh - 240px - var(--fixedHeaderHeight));
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.content-wrapper .tip-container {
+    position: relative;
+    margin-bottom: 40px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 15px 20px;
+    height: 80px;
+}
+
+.content-wrapper .tip-container img {
+    height: 80px;
+    margin-right: 20px;
+}
+
+.content-wrapper .tip-container .text {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 200;
+    font-size: 10pt;
+    cursor: default;
+}
+
+.content-wrapper .tip-container .text span {
+    display: block;
+    font-weight: 500;
+    font-size: 13pt;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.content-wrapper .tip-container .button {
+    position: absolute;
+    bottom: -10px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    right: 10px;
+    color: var(--gray2);
+    font-size: 9pt;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.1s ease;
+}
+
+.content-wrapper .tip-container .button:hover {
+    background-color: var(--gray3);
+    border-color: gainsboro;
+}
+
+.content-wrapper .tip-container .button:active {
+    border-color: var(--secondaryRed);
+}
+
+.content-wrapper .tip-container .button i {
+    margin-right: 5px;
+}
+
+.content-wrapper .article-container {
+    position: relative;
+    padding: 60px 20px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 10px 0px 50px 0px;
+}
+
+.content-wrapper .article-container .title {
+    position: absolute;
+    top: 15px;
+    font-family: 'PT Serif Caption';
+    font-style: italic;
+    color: var(--secondaryRed);
+    font-size: 16pt;
+}
+
+.content-wrapper .article-container .content {
+    text-align: justify;
+}
+
+.content-wrapper .article-container .date {
+    position: absolute;
+    bottom: -10px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    right: 10px;
+    color: var(--gray2);
+    font-size: 9pt;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.content-wrapper .article-container .author-wrapper {
+    position: absolute;
+    bottom: -10px;
+    height: 54px;
+    width: 300px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    transition: 0.1s ease;
+}
+
+.content-wrapper .article-container .author-wrapper:hover {
+    background-color: var(--gray3);
+    border-color: gainsboro;
+}
+
+.content-wrapper .article-container .author-wrapper:active {
+    border-color: var(--secondaryRed);
+}
+
+.content-wrapper .article-container .author-wrapper img {
+    width: 50px;
+    border-radius: 5px;
+    border: 2px solid gainsboro;
+}
+
+.content-wrapper .article-container .author-wrapper div {
+    font-family: 'PT Serif Caption';
+    font-style: italic;
+    color: var(--gray2);
+    font-size: 12pt;
+    position: relative;
+    top: -40px;
+    left: 65px;
+    width: fit-content;
+}
