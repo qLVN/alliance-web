@@ -144,3 +144,14 @@
 .quickinfo-wrapper div:active {
     transform: scale(1);
 }
+
+/* HEADER DROPDOWN SPECIAL HOME.CSS SETTINGS */
+
+#header-dropdown {
+    height: 300px;
+}
+
+#header-dropdown div.group .link-wrapper {
+    top: 80px;
+    left: 270px;
+}

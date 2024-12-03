@@ -29,16 +29,13 @@
                 <div class="title">L'ALLIANCE</div>
             </div>
             <div class="right-panel">
-                <div onclick="openAnimatedLink(this, 'demo.htm');">
-                    <a>Nous rejoindre</a>
+                <div onclick="toggleHeaderDropdown('publications');" onmouseover="toggleHeaderDropdown('publications');" class="dropdown">
+                    <a><i class="fas fa-chevron-down"></i>Publications</a>
                 </div>
-                <div onclick="openAnimatedLink(this, 'financialmarkets.htm');">
-                    <a>Finance</a>
+                <div onclick="toggleHeaderDropdown('team');" onmouseover="toggleHeaderDropdown('team');" class="dropdown">
+                    <a><i class="fas fa-chevron-down"></i>Notre Groupe</a>
                 </div>
-                <div onclick="openAnimatedLink(this, 'demo.htm');">
-                    <a>Économie</a>
-                </div>
-                <div onclick="openAnimatedLink(this, 'demo.htm');">
+                <div onclick="openAnimatedLink(this, 'demo.htm');" onmouseover="toggleHeaderDropdown(null);">
                     <a>Contact</a>
                 </div>
                 <div>
@@ -46,6 +43,29 @@
                 </div>
             </div>
         </header>
+        <div id="header-dropdown" onmouseleave="toggleHeaderDropdown(null);" style="pointer-events: none;">
+            <div class="title-bg"></div>
+            <div id="publications-dropdown" class="group">
+                <div class="title">Publications</div>
+                <div class="link-wrapper">
+                    <li onclick="openAnimatedLink(this, 'financialmarkets.htm');">Finance de Marché</li>
+                    <li>Finance d'Entreprise</li>
+                    <li>Développement Informatique</li>
+                    <li>Analyses Économiques</li>
+                </div>
+                <img src="assets/material/bgCrest.png" />
+            </div>
+            <div id="team-dropdown" class="group">
+                <div class="title">Notre Groupe</div>
+                <div class="link-wrapper">
+                    <li>Nous rejoindre</li>
+                    <li>Nous rejoindre</li>
+                    <li>Nous rejoindre</li>
+                    <li>Nous rejoindre</li>
+                </div>
+                <img src="assets/material/bgCrest.png" />
+            </div>
+        </div>
         <div class="home-banner">
             <div class="title">« L'excellence au cœur de la finance et l'économie »</div>
             <div class="subtitle">Bienvenue sur notre Think Tank.</div>

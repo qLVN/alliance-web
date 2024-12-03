@@ -29,16 +29,13 @@
                 <div class="title">L'ALLIANCE</div>
             </div>
             <div class="right-panel">
-                <div onclick="openAnimatedLink(this, 'demo.htm');">
-                    <a>Nous rejoindre</a>
+                <div onclick="toggleHeaderDropdown('publications');" onmouseover="toggleHeaderDropdown('publications');" class="dropdown">
+                    <a><i class="fas fa-chevron-down"></i>Publications</a>
                 </div>
-                <div onclick="openAnimatedLink(this, 'demo.htm');">
-                    <a>Finance</a>
+                <div onclick="toggleHeaderDropdown('team');" onmouseover="toggleHeaderDropdown('team');" class="dropdown">
+                    <a><i class="fas fa-chevron-down"></i>Notre Groupe</a>
                 </div>
-                <div onclick="openAnimatedLink(this, 'demo.htm');">
-                    <a>Économie</a>
-                </div>
-                <div onclick="openAnimatedLink(this, 'demo.htm');">
+                <div onclick="openAnimatedLink(this, 'demo.htm');" onmouseover="toggleHeaderDropdown(null);">
                     <a>Contact</a>
                 </div>
                 <div>
@@ -46,8 +43,31 @@
                 </div>
             </div>
         </header>
+        <div id="header-dropdown" onmouseleave="toggleHeaderDropdown(null);" style="pointer-events: none;">
+            <div class="title-bg"></div>
+            <div id="publications-dropdown" class="group">
+                <div class="title">Publications</div>
+                <div class="link-wrapper">
+                    <li onclick="openAnimatedLink(this, 'financialmarkets.htm');">Finance de Marché</li>
+                    <li>Finance d'Entreprise</li>
+                    <li>Développement Informatique</li>
+                    <li>Analyses Économiques</li>
+                </div>
+                <img src="assets/material/bgCrest.png" />
+            </div>
+            <div id="team-dropdown" class="group">
+                <div class="title">Notre Groupe</div>
+                <div class="link-wrapper">
+                    <li>Nous rejoindre</li>
+                    <li>Nous rejoindre</li>
+                    <li>Nous rejoindre</li>
+                    <li>Nous rejoindre</li>
+                </div>
+                <img src="assets/material/bgCrest.png" />
+            </div>
+        </div>
         <div class="content-banner">
-            <div class="title">Marchés financiers</div>
+            <div class="title">Finances de Marché</div>
             <div class="subtitle">sous-titre intéressant et d'une taille moyenne</div>
             <img src="assets/material/backdrop.png" />
             <img src="assets/material/backdrop.png" />
@@ -55,7 +75,7 @@
         <div class="content-wrapper">
             <div class="tip-container">
                 <img src="assets/material/notifications.png" />
-                <div class="text"><span>Activez les notifications de la section Marchés Financiers.</span>Pour être informé dès la publication d'un article</div>
+                <div class="text"><span>Activez les notifications pour la section Marchés Financiers.</span>Pour être informé dès la publication d'un article</div>
                 <div class="button"><i class="fas fa-check"></i>Activer les notifications</div>
             </div>
             <div class="article-container">
@@ -96,7 +116,7 @@
             </div>
         </div>
         <footer>
-            <img src="assets/material/logo_outlined.png" />
+            <img class="side-img" src="assets/material/logo_outlined.png" />
             <div class="link-container">
                 <li>Sitemap</li>
                 <li>Link</li>
@@ -111,7 +131,8 @@
                 <li>Link</li>
                 <li>Link</li>
             </div>
-            <div class="copyright">© 2024 lvn. All rights reserved.</div>
+            <div class="copyright"  onclick="openLink('https://github.com/qLVN', 'newpage');" title="Ouvrir la page GitHub">© 2024 lvn. All rights reserved.</div>
+            <img class="back-img" src="assets/material/bgCrest.png" />
         </footer>
         <div id="navigation-view">
             <img src="assets/material/logo.png" id="navigation-icon" />
