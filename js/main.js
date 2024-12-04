@@ -19,11 +19,13 @@ function openAnimatedLink(button, link) {
     document.getElementById('navigation-icon').style.opacity = 1;
 
     setTimeout(function(){ 
-        navView.removeAttribute('style');
-        
-        document.getElementById('navigation-icon').style.opacity = 0;
-
         window.open(link, '_top');
+
+        setTimeout(function(){ 
+          navView.removeAttribute('style');
+          
+          document.getElementById('navigation-icon').style.opacity = 0;
+        }, 100); 
     }, 500); 
 }
 
@@ -34,6 +36,12 @@ function openLink(page, where) {
   else if(where == "newpage") {
       window.open(page, '_blank');
   }
+}
+
+function scrollToElementWithId(id) {
+  //document.getElementById(id).scrollIntoView(); NOT SMOOTH
+
+  window.scrollTo({ top: document.getElementById(id).offsetTop - 80, behavior: 'smooth'}); // - 80 to account the header size
 }
 
 displayedGroup = null;

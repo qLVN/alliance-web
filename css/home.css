@@ -1,3 +1,5 @@
+/* MAIN HOME.CSS BANNER */
+
 .home-banner {
     position: relative;
     width: 100%;
@@ -61,6 +63,7 @@
 
 .home-banner .button-wrapper a {
     text-decoration: none;
+    cursor: pointer;
     color: #664e4e;
     background-color: #ffffffd1;
     padding: 2px 15px;
@@ -72,7 +75,7 @@
     opacity: 0;
     animation: elem-fade 0.5s ease-out forwards;
 
-    transition: 0.3s ease color;
+    transition: 0.3s ease;
 }
 
 .home-banner .button-wrapper a:nth-child(1) {
@@ -112,14 +115,16 @@
     margin-right: 7px;
 }
 
+/* QUICK INFO BOXES */
+
 .quickinfo-wrapper {
     height: calc(100vh - 360px - var(--fixedHeaderHeight));
     padding: 30px;
     max-width: 1200px;
-    margin: auto;
+    margin: auto auto 60px auto;
 }
 
-.quickinfo-wrapper div {
+.quickinfo-wrapper .quickinfo {
     height: 100%;
     width: calc(100% / 3 - 23px);
     display: inline-block;
@@ -133,16 +138,119 @@
     transition: 0.1s ease transform;
 }
 
-.quickinfo-wrapper div:nth-child(1) {
+.quickinfo-wrapper .quickinfo:nth-child(1) {
     margin: 0px;
 }
 
-.quickinfo-wrapper div:hover {
+.quickinfo-wrapper .quickinfo:hover {
     transform: scale(1.005);
 }
 
-.quickinfo-wrapper div:active {
+.quickinfo-wrapper .quickinfo:active {
     transform: scale(1);
+}
+
+.quickinfo-wrapper .quickinfo .title {
+    font-size: 1.5em;
+    margin: 15px 20px;
+    height: 75px;
+    position: absolute;
+    bottom: 0px;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.2);
+    pointer-events: none;
+
+    color: white;
+}
+
+.quickinfo-wrapper .quickinfo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.quickinfo-wrapper .quickinfo .gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.18949586670605745) 0%, rgb(186, 186, 186) 76%, rgb(173, 173, 173) 100%);
+    opacity: 0.4;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.quickinfo-wrapper .quickinfo i {
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    right: 15px;
+    font-size: 18pt;
+    pointer-events: none;
+    opacity: 0;
+
+    transition: 0.2s ease;
+}
+
+.quickinfo-wrapper .quickinfo:hover i {
+    opacity: 1;
+    bottom: 10px;
+}
+
+/* CONTENT BANNERS */
+
+.banner {
+    position: relative;
+    height: 40vw;
+    max-height: 350px;
+    background-color: var(--gray3);
+}
+
+.banner img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 0px;
+    margin: 30px;
+    font-size: 3.5em;
+    color: var(--secondaryRed);
+    font-weight: 300;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    font-family: 'PT Serif Caption';
+    font-style: italic;
+}
+
+.banner .button {
+    position: absolute;
+    bottom: 35px;
+    right: 50px;
+    color: #664e4e;
+    background-color: #dcdcdcba;
+    padding: 2px 15px;
+    border-radius: 10px;
+    border: 1px solid #b9b9b9c4;
+    font-weight: 300;
+    transition: 0.3s ease;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+}
+
+.banner .button:hover {
+    color: var(--secondaryRed);
+    border-color: var(--secondaryRed);
+}
+
+p {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: justify;
 }
 
 /* HEADER DROPDOWN SPECIAL HOME.CSS SETTINGS */
@@ -154,4 +262,10 @@
 #header-dropdown div.group .link-wrapper {
     top: 80px;
     left: 270px;
+}
+
+/* FOOTER SPECIAL HOME.CSS SETTINGS */
+
+footer {
+    margin-top: 150px;
 }

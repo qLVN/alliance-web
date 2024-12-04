@@ -1,0 +1,66 @@
+.content-wrapper {
+    max-width: 700px;
+}
+
+p {
+    font-size: 10pt;
+    font-weight: 200;
+    color: gray;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.content-wrapper label {
+    display: block;
+}
+
+.content-wrapper input[type="text"], .content-wrapper input[type="email"] {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    font-size: 12pt;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: 1px solid var(--gray1);
+
+    transition: 0.2s ease;
+}
+
+.content-wrapper input[type="submit"] {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    margin: 30px 0px;
+    border-radius: 10px;
+    border: 1px solid var(--secondaryRed);
+    background-color: white;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.content-wrapper input[type="submit"]:hover {
+    letter-spacing: 0.2px;
+    color: var(--secondaryRed);
+}
+
+.content-wrapper textarea {
+    outline: none;
+    border-radius: 10px 10px 0px 10px;
+    border: 1px solid var(--gray1);
+    padding: 10px;
+    width: 100% !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    margin: 10px 0px;
+
+    transition: 0.2s ease;
+}
+
+.content-wrapper input[type="text"]:hover, .content-wrapper input[type="email"]:hover, .content-wrapper textarea:hover {
+    border-color: var(--secondaryRed);
+}
+
+.content-wrapper input[type="text"]:focus, .content-wrapper input[type="email"]:focus, .content-wrapper textarea:focus {
+    border-color: var(--secondaryRed);
+}

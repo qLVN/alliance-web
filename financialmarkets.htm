@@ -10,6 +10,7 @@
         <link rel="manifest" href="assets/favicon/site.webmanifest">
        
         <link rel="stylesheet" href="css\main.css">
+        <link rel="stylesheet" href="css\basic.css">
         <link rel="stylesheet" href="css\articles.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +36,7 @@
                 <div onclick="toggleHeaderDropdown('team');" onmouseover="toggleHeaderDropdown('team');" class="dropdown">
                     <a><i class="fas fa-chevron-down"></i>Notre Groupe</a>
                 </div>
-                <div onclick="openAnimatedLink(this, 'demo.htm');" onmouseover="toggleHeaderDropdown(null);">
+                <div onclick="openAnimatedLink(this, 'contact.htm');" onmouseover="toggleHeaderDropdown(null);">
                     <a>Contact</a>
                 </div>
                 <div>
@@ -53,17 +54,17 @@
                     <li>Développement Informatique</li>
                     <li>Analyses Économiques</li>
                 </div>
-                <img src="assets/material/bgCrest.png" />
+                <img src="assets/material/bgCrest.png" draggable="" />
             </div>
             <div id="team-dropdown" class="group">
                 <div class="title">Notre Groupe</div>
                 <div class="link-wrapper">
-                    <li>Nous rejoindre</li>
-                    <li>Nous rejoindre</li>
-                    <li>Nous rejoindre</li>
-                    <li>Nous rejoindre</li>
+                    <li>Qui sommes-nous ?</li>
+                    <li>Événements</li>
+                    <li>Nous Rejoindre</li>
+                    <li onclick="openAnimatedLink(this, 'contact.htm');">Nous Contacter</li>
                 </div>
-                <img src="assets/material/bgCrest.png" />
+                <img src="assets/material/bgCrest.png" draggable="false" />
             </div>
         </div>
         <div class="content-banner">
@@ -74,7 +75,7 @@
         </div>
         <div class="content-wrapper">
             <div class="tip-container">
-                <img src="assets/material/notifications.png" />
+                <img src="assets/material/notifications.png" draggable="false" />
                 <div class="text"><span>Activez les notifications pour la section Marchés Financiers.</span>Pour être informé dès la publication d'un article</div>
                 <div class="button"><i class="fas fa-check"></i>Activer les notifications</div>
             </div>
@@ -118,18 +119,18 @@
         <footer>
             <img class="side-img" src="assets/material/logo_outlined.png" />
             <div class="link-container">
+                <li>Accueil</li>
+                <li>Mentions Légales</li>
+                <li>Politique RGPD</li>
+                <li onclick="openAnimatedLink(this, 'contact.htm');">Nous Contacter</li>
+                <li>Événements</li>
+                <li>Nous Rejoindre</li>
+                <li onclick="openLink('https://www.linkedin.com/company/l-alliance-think-thank', 'newpage');">Page LinkedIn</li>
                 <li>Sitemap</li>
+                <!-- <li>Link</li>
                 <li>Link</li>
                 <li>Link</li>
-                <li>Link</li>
-                <li>Link</li>
-                <li>Link</li>
-                <li>Link</li>
-                <li>Link</li>
-                <li>Link</li>
-                <li>Link</li>
-                <li>Link</li>
-                <li>Link</li>
+                <li>Link</li> -->
             </div>
             <div class="copyright"  onclick="openLink('https://github.com/qLVN', 'newpage');" title="Ouvrir la page GitHub">© 2024 lvn. All rights reserved.</div>
             <img class="back-img" src="assets/material/bgCrest.png" />

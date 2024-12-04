@@ -104,6 +104,7 @@ header .right-panel div:active, header .link-wrapper:hover {
     z-index: 998;
     border-bottom: 1px solid gainsboro;
     border-top: 1px solid gainsboro;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     top: var(--headerHeight);
     opacity: 0;
@@ -309,6 +310,7 @@ footer .back-img {
     top: 0px;
     right: 0px;
     opacity: 0.03;
+    pointer-events: none;
 }
 
 footer .copyright {
@@ -349,7 +351,8 @@ footer .link-container li {
 
 footer .link-container li:hover {
     text-decoration: underline;
-    letter-spacing: 1px;
+    letter-spacing: 0.2px;
+    list-style-type: disc;
 }
 
 footer .copyright:hover {
