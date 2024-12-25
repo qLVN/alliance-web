@@ -104,3 +104,15 @@ function toggleHeaderDropdown(contentName) { //not the cleanest
   }
   document.getElementById(contentName + '-dropdown').style.pointerEvents = 'all';
 }
+
+function toggleMobileHeader() {
+  burger = document.getElementById('burger');
+
+  if(burger.classList.contains('clicked')) { //toggle off
+    burger.classList.remove('clicked');
+  } else { //toggle on
+    burger.classList.add('clicked');
+  }
+
+  //TODO
+}

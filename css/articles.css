@@ -129,3 +129,17 @@
     left: 65px;
     width: fit-content;
 }
+
+/* SCREEN SIZE COMPATIBILITY */
+
+@media only screen and (max-width: 800px) {
+    .content-wrapper .tip-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .content-wrapper .article-container .author-wrapper div {
+        top: -55px;
+    }
+}

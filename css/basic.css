@@ -54,3 +54,15 @@
     max-width: 1000px;
     margin: auto;
 }
+
+/* SCREEN SIZE COMPATIBILITY */
+
+@media only screen and (max-width: 400px) {
+    .content-banner .title {
+        font-size: 7vw;
+    }
+
+    .content-banner .subtitle {
+        font-size: 4vw;
+    }
+}
