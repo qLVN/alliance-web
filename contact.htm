@@ -48,34 +48,68 @@
                 </div>
             </div>
         </header>
+        <div id="mobile-header">
+            <div class="mh-content" id="mh-main">
+                <div class="head">
+                    <img src="assets/material/backArrow.png" draggable="false" style="opacity: 0;" />
+                    <div class="title"></div>
+                    <ul>
+                        <li onclick="openAnimatedLink(this, 'home.htm');">Accueil<i class="fas fa-external-link-square-alt"></i></li>
+                        <li onclick="mhNavigate('publications');">Publications<i class="fas fa-chevron-right"></i></li>
+                        <li onclick="mhNavigate('group');">Notre Groupe<i class="fas fa-chevron-right"></i></li>
+                        <li onclick="openAnimatedLink(this, 'contact.htm');">Contact<i class="fas fa-external-link-square-alt"></i></li>
+                        <li>Version Anglaise<i class="fas fa-external-link-square-alt"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mh-content" id="mh-publications">
+                <div class="head" onclick="mhNavigate('main');">
+                    <img src="assets/material/backArrow.png" draggable="false" />
+                    <div class="title">Publications</div>
+                    <ul>
+                        <li onclick="openAnimatedLink(this, 'financialmarkets.htm');">Finances de Marché<i class="fas fa-external-link-square-alt"></i></li>
+                        <li>Finance d'Entreprise<i class="fas fa-external-link-square-alt"></i></li>
+                        <li>Développement Informatique<i class="fas fa-external-link-square-alt"></i></li>
+                        <li>Analyses Économiques<i class="fas fa-external-link-square-alt"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mh-content" id="mh-group">
+                <div class="head" onclick="mhNavigate('main');">
+                    <img src="assets/material/backArrow.png" draggable="false" />
+                    <div class="title">Notre Groupe</div>
+                    <ul>
+                        <li onclick="openAnimatedLink(this, 'financialmarkets.htm');">Qui sommes-nous ?<i class="fas fa-external-link-square-alt"></i></li>
+                        <li>Événements<i class="fas fa-external-link-square-alt"></i></li>
+                        <li>Nous Rejoindre<i class="fas fa-external-link-square-alt"></i></li>
+                        <li onclick="openAnimatedLink(this, 'contact.htm');">Contact<i class="fas fa-external-link-square-alt"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="color-border"></div>
+        </div>
         <div id="header-dropdown" onmouseleave="toggleHeaderDropdown(null);" style="pointer-events: none;">
             <div class="title-bg"></div>
             <div id="publications-dropdown" class="group">
                 <div class="title">Publications</div>
                 <div class="link-wrapper">
                     <li onclick="openAnimatedLink(this, 'financialmarkets.htm');">Finance de Marché</li>
-                    <li>Finance d'Entreprise</li>
-                    <li>Développement Informatique</li>
-                    <li>Analyses Économiques</li>
+                    <li onclick="openAnimatedLink(this, 'corpfinance.htm');">Finance d'Entreprise</li>
+                    <li onclick="openAnimatedLink(this, 'coding.htm');">Développement Informatique</li>
+                    <li onclick="openAnimatedLink(this, 'ecoanalysis.htm');">Analyses Économiques</li>
                 </div>
-                <img src="assets/material/bgCrest.png" draggable="" />
+                <img src="assets/material/bgCrest.png" />
             </div>
             <div id="team-dropdown" class="group">
                 <div class="title">Notre Groupe</div>
                 <div class="link-wrapper">
-                    <li>Qui sommes-nous ?</li>
-                    <li>Événements</li>
-                    <li>Nous Rejoindre</li>
+                    <li onclick="openAnimatedLink(this, 'aboutus.htm');">Qui sommes-nous ?</li>
+                    <li onclick="openAnimatedLink(this, 'events.htm');">Événements</li>
+                    <li onclick="openAnimatedLink(this, 'join.htm');">Nous Rejoindre</li>
                     <li onclick="openAnimatedLink(this, 'contact.htm');">Nous Contacter</li>
                 </div>
-                <img src="assets/material/bgCrest.png" draggable="false" />
+                <img src="assets/material/bgCrest.png" />
             </div>
-        </div>
-        <div class="content-banner">
-            <div class="title">Nous Contacter</div>
-            <div class="subtitle">Nous donnerons suite à votre requête dans les plus bref délais.</div>
-            <img src="assets/material/backdrop.png" />
-            <img src="assets/material/backdrop.png" />
         </div>
         <div class="content-wrapper">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero, consequatur obcaecati magnam sint odio sit modi ex pariatur natus sed optio illum! Labore at id exercitationem error corporis recusandae.</p>
@@ -92,20 +126,20 @@
         <footer>
             <img class="side-img" src="assets/material/logo_outlined.png" />
             <div class="link-container">
-                <li>Accueil</li>
-                <li>Mentions Légales</li>
-                <li>Politique RGPD</li>
+                <li onclick="openAnimatedLink(this, 'home.htm');">Accueil</li>
+                <li onclick="openAnimatedLink(this, 'legal.htm');">Mentions Légales</li>
+                <li onclick="openAnimatedLink(this, 'rgpd.htm');">Politique RGPD</li>
                 <li onclick="openAnimatedLink(this, 'contact.htm');">Nous Contacter</li>
-                <li>Événements</li>
-                <li>Nous Rejoindre</li>
+                <li onclick="openAnimatedLink(this, 'events.htm');">Événements</li>
+                <li onclick="openAnimatedLink(this, 'join.htm');">Nous Rejoindre</li>
                 <li onclick="openLink('https://www.linkedin.com/company/l-alliance-think-thank', 'newpage');">Page LinkedIn</li>
-                <li>Sitemap</li>
+                <li onclick="openAnimatedLink(this, 'sitemap.htm');">Sitemap</li>
                 <!-- <li>Link</li>
                 <li>Link</li>
                 <li>Link</li>
                 <li>Link</li> -->
             </div>
-            <div class="copyright"  onclick="openLink('https://github.com/qLVN', 'newpage');" title="Ouvrir la page GitHub">© 2024 lvn. All rights reserved.</div>
+            <div class="copyright"  onclick="openLink('https://github.com/qLVN', 'newpage');" title="Ouvrir la page GitHub">© 2025 lvn. All rights reserved.</div>
             <img class="back-img" src="assets/material/bgCrest.png" />
         </footer>
         <div id="navigation-view">
