@@ -107,12 +107,27 @@ function toggleHeaderDropdown(contentName) { //not the cleanest
 
 function toggleMobileHeader() {
   burger = document.getElementById('burger');
+  mobileHeader = document.getElementById('mobile-header');
 
   if(burger.classList.contains('clicked')) { //toggle off
     burger.classList.remove('clicked');
+
+    mobileHeader.classList.remove('displayed');
   } else { //toggle on
     burger.classList.add('clicked');
-  }
 
-  //TODO
+    mobileHeader.classList.add('displayed');
+  }
+}
+
+function mhNavigate(location) {
+  document.querySelectorAll('.mh-content').forEach(e => {
+    e.style.opacity = 0;
+    e.style.pointerEvents = 'none';
+    e.style.marginLeft = '15px';
+  });
+
+  document.getElementById('mh-' + location).style.opacity = 1;
+  document.getElementById('mh-' + location).style.pointerEvents = 'all';
+  document.getElementById('mh-' + location).style.marginLeft = '0px';
 }
