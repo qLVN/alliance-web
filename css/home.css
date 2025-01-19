@@ -23,7 +23,8 @@
     font-style: italic;
 
     opacity: 0;
-    animation: elem-fade 0.3s 0.3s ease-out forwards;
+    -webkit-animation: elem-fade 0.3s 0.3s ease-out forwards;
+            animation: elem-fade 0.3s 0.3s ease-out forwards;
 }
 
 .home-banner .subtitle {
@@ -34,7 +35,8 @@
     margin-top: 10px;
 
     opacity: 0;
-    animation: elem-fade 0.3s 0.5s ease-out forwards;
+    -webkit-animation: elem-fade 0.3s 0.5s ease-out forwards;
+            animation: elem-fade 0.3s 0.5s ease-out forwards;
 
 }
 
@@ -47,7 +49,9 @@
 }
 
 .home-banner img:nth-child(even) {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     right: 0px;
 }
 
@@ -59,7 +63,9 @@
     width: 100%;
     bottom: 20px;
 
-    animation: button-wrapper-fade 1.5s 0.5s cubic-bezier(.2,.16,.09,.96) forwards;
+    -webkit-animation: button-wrapper-fade 1.5s 0.5s cubic-bezier(.2,.16,.09,.96) forwards;
+
+            animation: button-wrapper-fade 1.5s 0.5s cubic-bezier(.2,.16,.09,.96) forwards;
 }
 
 .home-banner .button-wrapper a {
@@ -74,29 +80,48 @@
     font-weight: 300;
 
     opacity: 0;
-    animation: elem-fade 0.5s ease-out forwards;
+    -webkit-animation: elem-fade 0.5s ease-out forwards;
+            animation: elem-fade 0.5s ease-out forwards;
+
+    -webkit-transition: 0.3s ease;
+
+    -o-transition: 0.3s ease;
 
     transition: 0.3s ease;
 }
 
 .home-banner .button-wrapper a:nth-child(1) {
-    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
 }
 
 .home-banner .button-wrapper a:nth-child(2) {
-    animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
 }
 
 .home-banner .button-wrapper a:nth-child(3) {
-    animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
 }
 
 .home-banner .button-wrapper a:nth-child(4) {
-    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
 }
 
 .home-banner .button-wrapper a:nth-child(5) {
-    animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+}
+
+@-webkit-keyframes button-wrapper-fade {
+    from {
+        bottom: 20px;
+    }
+    to {
+        bottom: 30px;
+    }
 }
 
 @keyframes button-wrapper-fade {
@@ -134,7 +159,15 @@
     border-radius: 10px;
     cursor: pointer;
 
-    transform: scale(1);
+    -webkit-transform: scale(1);
+
+        -ms-transform: scale(1);
+
+            transform: scale(1);
+
+    -webkit-transition: 0.1s ease transform;
+
+    -o-transition: 0.1s ease transform;
 
     transition: 0.1s ease transform;
 }
@@ -144,11 +177,15 @@
 }
 
 .quickinfo-wrapper .quickinfo:hover {
-    transform: scale(1.005);
+    -webkit-transform: scale(1.005);
+        -ms-transform: scale(1.005);
+            transform: scale(1.005);
 }
 
 .quickinfo-wrapper .quickinfo:active {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
 }
 
 .quickinfo-wrapper .quickinfo .title {
@@ -164,7 +201,8 @@
 }
 
 .quickinfo-wrapper .quickinfo img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -177,6 +215,8 @@
     position: absolute;
     top: 0px;
     background: rgb(255,255,255);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.18949586670605745)), color-stop(76%, rgb(186, 186, 186)), to(rgb(173, 173, 173)));
+    background: -o-linear-gradient(top, rgba(255,255,255,0.18949586670605745) 0%, rgb(186, 186, 186) 76%, rgb(173, 173, 173) 100%);
     background: linear-gradient(180deg, rgba(255,255,255,0.18949586670605745) 0%, rgb(186, 186, 186) 76%, rgb(173, 173, 173) 100%);
     opacity: 0.4;
     border-radius: 10px;
@@ -191,6 +231,10 @@
     font-size: 18pt;
     pointer-events: none;
     opacity: 0;
+
+    -webkit-transition: 0.2s ease;
+
+    -o-transition: 0.2s ease;
 
     transition: 0.2s ease;
 }
@@ -210,7 +254,8 @@
 }
 
 .banner img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -237,6 +282,8 @@
     border-radius: 10px;
     border: 1px solid #b9b9b9c4;
     font-weight: 300;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
     cursor: pointer;
     -webkit-backdrop-filter: blur(4px);

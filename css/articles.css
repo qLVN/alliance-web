@@ -42,6 +42,10 @@
     border-radius: 5px;
     cursor: pointer;
 
+    -webkit-transition: 0.1s ease;
+
+    -o-transition: 0.1s ease;
+
     transition: 0.1s ease;
 }
 
@@ -101,6 +105,10 @@
     border: 1px solid transparent;
     border-radius: 5px;
 
+    -webkit-transition: 0.1s ease;
+
+    -o-transition: 0.1s ease;
+
     transition: 0.1s ease;
 }
 
@@ -127,6 +135,8 @@
     position: relative;
     top: -40px;
     left: 65px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 

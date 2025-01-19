@@ -35,6 +35,10 @@ header {
     backdrop-filter: blur(10px);
     background-color: #fffc;
 
+    -webkit-transition: 0.3s ease height;
+
+    -o-transition: 0.3s ease height;
+
     transition: 0.3s ease height;
 }
 
@@ -43,6 +47,8 @@ header .link-wrapper {
     height: 100%;
     width: 240px;
     cursor: pointer;
+    -webkit-transition: ease-out 0.1s background-color;
+    -o-transition: ease-out 0.1s background-color;
     transition: ease-out 0.1s background-color;
 }
 
@@ -72,6 +78,8 @@ header .right-panel div {
     height: 100%;
     cursor: pointer;
     background-color: transparent;
+    -webkit-transition: ease-out 0.1s background-color;
+    -o-transition: ease-out 0.1s background-color;
     transition: ease-out 0.1s background-color;
 }
 
@@ -110,6 +118,8 @@ header #burger {
     padding-right: 20px;
     width: 80px;
     cursor: pointer;
+    -webkit-transition: ease-out 0.1s background-color;
+    -o-transition: ease-out 0.1s background-color;
     transition: ease-out 0.1s background-color;
 }
 
@@ -121,23 +131,35 @@ header #burger div {
     left: calc(50% - 25px);
     top: calc(50% - 1px);
 
+    -webkit-transition: 0.2s ease;
+
+    -o-transition: 0.2s ease;
+
     transition: 0.2s ease;
 }
 
 header #burger div:first-of-type {
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
 }
 
 header #burger div:last-of-type {
-    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+            transform: translateY(5px);
 }
 
 header #burger.clicked div:first-of-type {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 header #burger.clicked div:last-of-type {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 /* HEADER DROPDOWN MENU */
@@ -150,7 +172,8 @@ header #burger.clicked div:last-of-type {
     z-index: 998;
     border-bottom: 1px solid gainsboro;
     border-top: 1px solid gainsboro;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     top: var(--headerHeight);
     opacity: 0;
@@ -160,7 +183,19 @@ header #burger.clicked div:last-of-type {
 }
 
 #header-dropdown.fadein {
-    animation: header-dropdown-fadein 0.2s ease-out forwards;
+    -webkit-animation: header-dropdown-fadein 0.2s ease-out forwards;
+            animation: header-dropdown-fadein 0.2s ease-out forwards;
+}
+
+@-webkit-keyframes header-dropdown-fadein {
+    from {
+        top: calc(var(--headerHeight) - 10px);
+        opacity: 0;
+    }
+    to {
+        top: var(--headerHeight);
+        opacity: 1;
+    }
 }
 
 @keyframes header-dropdown-fadein {
@@ -193,17 +228,41 @@ header #burger.clicked div:last-of-type {
 }
 
 #header-dropdown div.group.animin-right {
-    animation: hd-animin-right 0.2s 0.1s ease-in forwards;
+    -webkit-animation: hd-animin-right 0.2s 0.1s ease-in forwards;
+            animation: hd-animin-right 0.2s 0.1s ease-in forwards;
 }
 
 #header-dropdown div.group.animin-left {
-    animation: hd-animin-left 0.2s 0.1s ease-in forwards;
+    -webkit-animation: hd-animin-left 0.2s 0.1s ease-in forwards;
+            animation: hd-animin-left 0.2s 0.1s ease-in forwards;
+}
+
+@-webkit-keyframes hd-animin-right {
+    from {
+        opacity: 0;
+        left: -10px;
+    }
+    to {
+        opacity: 1;
+        left: 0px;
+    }
 }
 
 @keyframes hd-animin-right {
     from {
         opacity: 0;
         left: -10px;
+    }
+    to {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes hd-animin-left {
+    from {
+        opacity: 0;
+        left: 10px;
     }
     to {
         opacity: 1;
@@ -223,11 +282,24 @@ header #burger.clicked div:last-of-type {
 }
 
 #header-dropdown div.group.animout-right {
-    animation: hd-animout-right 0.2s ease-in forwards;
+    -webkit-animation: hd-animout-right 0.2s ease-in forwards;
+            animation: hd-animout-right 0.2s ease-in forwards;
 }
 
 #header-dropdown div.group.animout-left {
-    animation: hd-animout-left 0.2s ease-in forwards;
+    -webkit-animation: hd-animout-left 0.2s ease-in forwards;
+            animation: hd-animout-left 0.2s ease-in forwards;
+}
+
+@-webkit-keyframes hd-animout-right {
+    from {
+        opacity: 1;
+        left: 0px;
+    }
+    to {
+        opacity: 0;
+        left: -10px;
+    }
 }
 
 @keyframes hd-animout-right {
@@ -238,6 +310,17 @@ header #burger.clicked div:last-of-type {
     to {
         opacity: 0;
         left: -10px;
+    }
+}
+
+@-webkit-keyframes hd-animout-left {
+    from {
+        opacity: 1;
+        left: 0px;
+    }
+    to {
+        opacity: 0;
+        left: 10px;
     }
 }
 
@@ -268,7 +351,11 @@ header #burger.clicked div:last-of-type {
     opacity: 0.2;
     height: calc(100% - 60px);
 
-    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+
+        -ms-transform: scaleX(-1);
+
+            transform: scaleX(-1);
 }
 
 #header-dropdown div.group .link-wrapper {
@@ -283,7 +370,13 @@ header #burger.clicked div:last-of-type {
     padding-top: 20px;
     cursor: pointer;
     position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+
+    -webkit-transition: 0.1s ease-out;
+
+    -o-transition: 0.1s ease-out;
 
     transition: 0.1s ease-out;
 }
@@ -296,6 +389,10 @@ header #burger.clicked div:last-of-type {
     width: 0%;
     height: 0.1em;
     background-color: var(--secondaryRed);
+
+    -webkit-transition: 0.2s;
+
+    -o-transition: 0.2s;
 
     transition: 0.2s;
   }
@@ -323,6 +420,10 @@ header #burger.clicked div:last-of-type {
     background-color: white;
     z-index: 998;
 
+    -webkit-transition: 0.2s ease-out;
+
+    -o-transition: 0.2s ease-out;
+
     transition: 0.2s ease-out;
 }
 
@@ -342,6 +443,10 @@ header #burger.clicked div:last-of-type {
     width: 100%;
 
     margin-left: 15px;
+
+    -webkit-transition: 0.2s ease;
+
+    -o-transition: 0.2s ease;
 
     transition: 0.2s ease;
 }
@@ -393,6 +498,10 @@ header #burger.clicked div:last-of-type {
     border-bottom: 1px solid var(--gray3);
     padding: 20px 0px 20px 10px;
     
+    -webkit-transition: 0.2s ease;
+    
+    -o-transition: 0.2s ease;
+    
     transition: 0.2s ease;
 }
 
@@ -414,7 +523,13 @@ header #burger.clicked div:last-of-type {
     background-color: var(--secondaryRed);
     z-index: 997;
     width: 100%;
-    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+        -ms-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+
+    -webkit-transition: 0.2s ease-out;
+
+    -o-transition: 0.2s ease-out;
 
     transition: 0.2s ease-out;
 }
@@ -437,6 +552,10 @@ header #burger.clicked div:last-of-type {
     pointer-events: none;
     opacity: 0;
 
+    -webkit-transition: 0.2s ease-out;
+
+    -o-transition: 0.2s ease-out;
+
     transition: 0.2s ease-out;
 }
 
@@ -446,6 +565,8 @@ header #burger.clicked div:last-of-type {
     top: calc(50% - 7.5vw);
     left: calc(50% - 7.5vw);
     pointer-events: none;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 
     opacity: 0;
@@ -485,6 +606,10 @@ footer .copyright {
     height: 20px;
     padding: 10px 0px;
 
+    -webkit-transition: 0.2s ease-out color;
+
+    -o-transition: 0.2s ease-out color;
+
     transition: 0.2s ease-out color;
 }
 
@@ -493,11 +618,14 @@ footer .link-container {
     width: calc(100% - 240px);
     float: right;
     margin: 70px 0px 70px 20px;
+    display: -ms-grid;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-auto-flow: column;
 
     overflow: hidden;
+
+    -ms-grid-rows: (1fr)[4];
 }
 
 footer .link-container li {
@@ -507,6 +635,10 @@ footer .link-container li {
     width: 150px;
     cursor: pointer;
     list-style: circle;
+
+    -webkit-transition: 0.2s ease;
+
+    -o-transition: 0.2s ease;
 
     transition: 0.2s ease;
 }
@@ -522,6 +654,15 @@ footer .copyright:hover {
 }
 
 /* GLOBAL ANIMATIONS */
+
+@-webkit-keyframes elem-fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 @keyframes elem-fade {
     from {
