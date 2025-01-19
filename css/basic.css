@@ -48,6 +48,10 @@
     right: 0px;
 }
 
+.content-banner img:nth-child(odd) {
+    left: 0px;
+}
+
 .content-wrapper {
     min-height: calc(100vh - 240px - var(--fixedHeaderHeight));
     padding: 30px;
