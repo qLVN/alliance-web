@@ -244,7 +244,7 @@
     bottom: 10px;
 }
 
-/* CONTENT BANNERS */
+/* CONTENT BANNERS AND ELEMENTS */
 
 .banner {
     position: relative;
@@ -296,10 +296,25 @@
 }
 
 p {
-    width: 100%;
+    width: calc(100% - 60px);
     max-width: 1000px;
     margin: 50px auto;
     text-align: justify;
+    padding: 0px 30px;
+}
+
+.centered-button {
+    margin: auto;
+    padding: 10px 20px;
+    background-color: var(--secondaryRed);
+    color: white;
+    font-family: 'PT Serif Caption';
+    font-style: italic;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15pt;
+    width: fit-content;
+    text-align: center;
 }
 
 /* HEADER DROPDOWN SPECIAL HOME.CSS SETTINGS */
@@ -329,5 +344,24 @@ footer {
 
     .banner h1 {
         font-size: 7vw;
+    }
+
+    .centered-button {
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .quickinfo-wrapper {
+        display: none;
+    }
+
+    .home-banner {
+        margin-bottom: 50px;
+    }
+
+    .home-banner img:nth-child(even) {
+        display: none;
     }
 }
