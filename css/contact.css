@@ -48,8 +48,8 @@ p {
 }
 
 .content-wrapper input[type="submit"]:hover {
-    letter-spacing: 0.2px;
-    color: var(--secondaryRed);
+    background-color: var(--secondaryRed);
+    color: white;
 }
 
 .content-wrapper textarea {

@@ -22,6 +22,10 @@
     font-family: 'PT Serif Caption';
     font-style: italic;
 
+    -webkit-transition: 0.3s ease font-size;
+    -o-transition: 0.3s ease font-size;
+    transition: 0.3s ease font-size;
+
     opacity: 0;
     -webkit-animation: elem-fade 0.3s 0.3s ease-out forwards;
             animation: elem-fade 0.3s 0.3s ease-out forwards;
@@ -270,6 +274,11 @@
     text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     font-family: 'PT Serif Caption';
     font-style: italic;
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    background-color: #ffffff40;
+    border-radius: 10px;
+    padding: 10px 30px;
 }
 
 .banner .button {
@@ -280,7 +289,7 @@
     background-color: #dcdcdcba;
     padding: 2px 15px;
     border-radius: 10px;
-    border: 1px solid #b9b9b9c4;
+    border: 2px solid #b9b9b9c4;
     font-weight: 300;
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
@@ -288,11 +297,13 @@
     cursor: pointer;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+    letter-spacing: 1px;
 }
 
 .banner .button:hover {
     color: var(--secondaryRed);
     border-color: var(--secondaryRed);
+    background-color: #ffffffba;
 }
 
 p {
@@ -363,5 +374,11 @@ footer {
 
     .home-banner img:nth-child(even) {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .home-banner .title {
+        font-size: 30pt;
     }
 }

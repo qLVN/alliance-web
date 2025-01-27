@@ -1,0 +1,16 @@
+[
+    {
+        "authorName": "auteur1",
+        "linkedin": "nomdulinkedin",
+        "email": "ababba@gmail.com",
+        "position": "Rédacteur en chef",
+        "desc": "ofjsfsfjsfspf"
+    },
+    {
+        "authorName": "auteur2",
+        "linkedin": "nomdulinkedin",
+        "email": "effsfsfsf@aol.com",
+        "position": "Rédacteur",
+        "desc": "ofjsfsfjsdfffspf"
+    }
+]
