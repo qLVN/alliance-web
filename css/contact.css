@@ -2,12 +2,16 @@
     max-width: 700px;
 }
 
-p {
+p, .content-wrapper li {
     font-size: 10pt;
     font-weight: 200;
     color: gray;
     margin-bottom: 40px;
     text-align: justify;
+}
+
+li {
+    margin-bottom: 0px;
 }
 
 .content-wrapper label {

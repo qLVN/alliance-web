@@ -18,6 +18,13 @@ body {
 
 a {
     color: var(--secondaryRed);
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Serif Caption';
+    color: var(--secondaryRed);
+    font-style: italic;
 }
 
 /* HEADER BAR */
@@ -98,14 +105,23 @@ header .right-panel div a {
 header .right-panel div a i {
     margin-right: 10px;
     opacity: 0.5;
+
+    -webkit-transition: ease-out 0.1s;
+    -o-transition: ease-out 0.1s;
+    transition: ease-out 0.1s;
 }
 
 header .right-panel div:hover, header .link-wrapper:hover, header #burger:hover {
     background-color: #b5b5b52c;
 }
 
-header .right-panel div:active, header .link-wrapper:hover, header #burger:hover {
+header .right-panel div:active, header .link-wrapper:active, header #burger:active {
     background-color: #8585852c;
+}
+
+header .right-panel div:hover a i {
+    color: var(--secondaryRed);
+    opacity: 1;
 }
 
 header #burger {
@@ -168,7 +184,8 @@ header #burger.clicked div:last-of-type {
     width: 100%;
     height: 260px;
     position: fixed;
-    background-color: white;
+    background: rgb(255,255,255);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 76%, rgba(219,219,219,1) 100%); 
     z-index: 998;
     border-bottom: 1px solid gainsboro;
     border-top: 1px solid gainsboro;
@@ -542,7 +559,8 @@ header #burger.clicked div:last-of-type {
 
 #navigation-view {
     position: fixed;
-    background-color: white;
+    background: rgb(255,255,255);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 76%, rgba(219,219,219,1) 100%); 
     width: calc(100% - 50px);
     height: calc(100% - 50px);
     top: 25px;

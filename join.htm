@@ -11,6 +11,7 @@
        
         <link rel="stylesheet" href="css\main.css">
         <link rel="stylesheet" href="css\basic.css">
+        <link rel="stylesheet" href="css\contact.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -112,12 +113,31 @@
         </div>
         <div class="content-banner">
             <div class="title">Nous Rejoindre</div>
-            <!-- <div class="subtitle"></div> -->
+            <div class="subtitle">Nous donnerons suite dès que possible aux demandes de candidatures</div>
             <img src="assets/material/backdrop.png" />
             <img src="assets/material/backdrop.png" />
         </div>
         <div class="content-wrapper">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero, consequatur obcaecati magnam sint odio sit modi ex pariatur natus sed optio illum! Labore at id exercitationem error corporis recusandae.</p>
+            <p>Si vous êtes étudiant en université, école de commerce, école d’ingénieur, la séléction se fait au mérite, les candidats doivent être motivé et montrer un fort intérêt pour la finance, avoir de l’expérience dans le secteur serait un plus.</p>
+            <p>
+                Afin, de candidater, veuillez remplir le questionnaire ci-dessous.<br><br>Les processus de séléction se déroulent de la façon suivante :
+                <ul>
+                    <li>1<sup>er</sup> tour : Entretien avec un membre de l'équipe RH du groupe</li>
+                    <li>2<sup>ème</sup> tour : Entretien avec un membre du Comité Éxécutif</li>
+                </ul>
+            </p>
+            <p>Si vous êtes déjà un professionnel du secteur, un diplomé ou faites l'objet d'une situation particulière, veuillez directement nous contacter via le <a onclick="openAnimatedLink(this, 'contact.htm')">formulaire de contact</a> en adressant un CV et votre lien LinkedIn.
+            <form method="POST">
+                <label>NOM</label>
+                <input type="text" placeholder="Ce champ est obligatoire." />
+                <label>Prénom</label>
+                <input type="text" placeholder="Ce champ est obligatoire." />
+                <label>Email</label>
+                <input type="email" placeholder="Ce champ est obligatoire." />
+                <label>Corps du message</label>
+                <textarea placeholder="Ce champ est obligatoire."></textarea>
+                <input type="submit" value="Envoyer la demande de candidature" onclick="alert('Cette fonctionnalité est encore en cours de développement, veuillez ré-essayer plus tard.');" />
+            </form>
         </div>
         <footer>
             <img class="side-img" src="assets/material/logo_outlined.png" />

@@ -118,14 +118,14 @@
             <img src="assets/material/backdrop.png" />
         </div>
         <div class="content-wrapper">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero, consequatur obcaecati magnam sint odio sit modi ex pariatur natus sed optio illum! Labore at id exercitationem error corporis recusandae.</p>
-            <form method="POST">
+            <p>En soumettant ce formulaire, vous acceptez que les informations saisies soient collectées et utilisées pour traiter votre demande. Pour plus d'informations sur la manière dont vos données sont traitées, consultez notre <a onclick="openAnimatedLink(this, 'rgpd.htm');">politique de confidentialité et RGPD</a>.</p>
+            <form action="https://formsubmit.co/3869f76d201e3374a397cc0d45073f25" method="POST">
                 <label>NOM & Prénom / Entité</label>
-                <input type="text" placeholder="Ce champ est obligatoire." />
+                <input type="text" name="name" placeholder="Ce champ est obligatoire." />
                 <label>Email</label>
-                <input type="email" placeholder="Ce champ est obligatoire." />
+                <input type="email" name="email" placeholder="Ce champ est obligatoire." />
                 <label>Corps du message</label>
-                <textarea placeholder="Ce champ est obligatoire."></textarea>
+                <textarea name="body" placeholder="Ce champ est obligatoire."></textarea>
                 <input type="submit" value="Envoyer la requête" onclick="alert('Cette fonctionnalité est encore en cours de développement, veuillez ré-essayer plus tard.');" />
             </form>
         </div>

@@ -41,7 +41,7 @@ function openLink(page, where) {
 function scrollToElementWithId(id) {
   //document.getElementById(id).scrollIntoView(); NOT SMOOTH
 
-  window.scrollTo({ top: document.getElementById(id).offsetTop - 80, behavior: 'smooth'}); // - 80 to account the header size
+  window.scrollTo({ top: document.getElementById(id).offsetTop - 110, behavior: 'smooth'}); // - 110 to account the header size
 }
 
 displayedGroup = null;
