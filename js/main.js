@@ -38,6 +38,14 @@ function openLink(page, where) {
   }
 }
 
+function showAlertBox(text) {
+  alertBox = document.createElement('div');
+  alertBox.className = 'alert-box';
+  alertBox.innerHTML = text + '<br /><span>Cliquez sur la notification pour la faire disparaitre</span>';
+  alertBox.setAttribute('onclick', 'this.remove();')
+  document.body.append(alertBox);
+}
+
 function scrollToElementWithId(id) {
   //document.getElementById(id).scrollIntoView(); NOT SMOOTH
 

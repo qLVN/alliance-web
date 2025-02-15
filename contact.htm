@@ -126,7 +126,9 @@
                 <input type="email" name="email" placeholder="Ce champ est obligatoire." />
                 <label>Corps du message</label>
                 <textarea name="body" placeholder="Ce champ est obligatoire."></textarea>
-                <input type="submit" value="Envoyer la requête" onclick="alert('Cette fonctionnalité est encore en cours de développement, veuillez ré-essayer plus tard.');" />
+                <label>Fichier additionnel</label>
+                <input type="file" name="file" />
+                <input type="submit" value="Envoyer la requête" onclick="showAlertBox('Votre demande de contact a été envoyée avec succès, nous reviendrons vers vous dans les plus brefs délais.');" />
             </form>
         </div>
         <footer>
