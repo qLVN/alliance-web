@@ -120,13 +120,13 @@
         <div class="content-wrapper">
             <p>En soumettant ce formulaire, vous acceptez que les informations saisies soient collectées et utilisées pour traiter votre demande. Pour plus d'informations sur la manière dont vos données sont traitées, consultez notre <a onclick="openAnimatedLink(this, 'rgpd.htm');">politique de confidentialité et RGPD</a>.</p>
             <form action="https://formsubmit.co/3869f76d201e3374a397cc0d45073f25" method="POST">
-                <label>NOM & Prénom / Entité</label>
+                <label for="name">NOM & Prénom / Entité</label>
                 <input type="text" name="name" placeholder="Ce champ est obligatoire." />
-                <label>Email</label>
+                <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Ce champ est obligatoire." />
-                <label>Corps du message</label>
+                <label for="body">Corps du message</label>
                 <textarea name="body" placeholder="Ce champ est obligatoire."></textarea>
-                <label>Fichier additionnel</label>
+                <label for="file">Fichier additionnel</label>
                 <input type="file" name="file" />
                 <input type="submit" value="Envoyer la requête" onclick="showAlertBox('Votre demande de contact a été envoyée avec succès, nous reviendrons vers vous dans les plus brefs délais.');" />
             </form>
