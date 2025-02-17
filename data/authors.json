@@ -1,16 +1,16 @@
 [
     {
-        "authorName": "auteur1",
-        "linkedin": "nomdulinkedin",
-        "email": "ababba@gmail.com",
-        "position": "Rédacteur en chef",
-        "desc": "ofjsfsfjsfspf"
+        "authorName": "Gautier BOUYSSOU",
+        "linkedin": "https://www.linkedin.com/in/gautier-bouyssou-b0ba7a220/",
+        "email": "/",
+        "position": "Fondateur",
+        "desc": ""
     },
     {
-        "authorName": "auteur2",
-        "linkedin": "nomdulinkedin",
-        "email": "effsfsfsf@aol.com",
-        "position": "Rédacteur",
-        "desc": "ofjsfsfjsdfffspf"
+        "authorName": "Killian BOUCHEREAU",
+        "linkedin": "https://www.linkedin.com/in/killian-bouchereau-453024254/",
+        "email": "/",
+        "position": "Président du comité Innovation & Digital Transformation",
+        "desc": ""
     }
 ]
