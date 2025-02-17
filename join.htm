@@ -127,18 +127,22 @@
                 </ul>
             </p>
             <p>Si vous êtes déjà un professionnel du secteur, un diplomé ou faites l'objet d'une situation particulière, veuillez directement nous contacter via le <a onclick="openAnimatedLink(this, 'contact.htm')">formulaire de contact</a> en adressant un CV et votre lien LinkedIn.
-            <form method="POST">
+            <form method="POST" action="https://formsubmit.co/3869f76d201e3374a397cc0d45073f25" enctype="multipart/form-data">
                 <label for="surname">NOM</label>
                 <input type="text" name="surname" placeholder="Ce champ est obligatoire." />
                 <label for="name">Prénom</label>
                 <input type="text" name="name" placeholder="Ce champ est obligatoire." />
                 <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Ce champ est obligatoire." />
-                <label for="body">Corps du message</label>
+                <label for="body">Message</label>
                 <textarea name="body" placeholder="Ce champ est obligatoire."></textarea>
-                <label for="cv">CV</label>
-                <input type="file" name="cv" />
-                <input type="submit" value="Envoyer la demande de candidature" onclick="showAlertBox('Votre candidature a été envoyée avec succès, nous reviendrons vers vous dans les plus brefs délais.');" />
+                <label for="attachment">CV (.pdf)</label>
+                <input type="file" name="attachment" accept="application/pdf">
+                <input type="hidden" name="_subject" value="Application at L'ALLIANCE">
+                <input type="hidden" name="_cc" value="ulucqs@gmail.com">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://fr.lalliancegroup.com/submitted.htm">
+                <input type="submit" value="Envoyer la demande de candidature" />
             </form>
         </div>
         <footer>
