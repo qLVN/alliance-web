@@ -42,8 +42,8 @@
                 <div onclick="openAnimatedLink(this, 'contact.htm');" onmouseover="toggleHeaderDropdown(null);">
                     <a>Contact</a>
                 </div>
-                <div>
-                    <a href="#" title="Voir le contenu en anglais">🇺🇸</a>
+                <div onclick="switchToEn();">
+                    <a title="Voir le contenu en anglais">🇺🇸</a>
                 </div>
             </div>
         </header>
@@ -57,7 +57,7 @@
                         <li onclick="mhNavigate('publications');">Publications<i class="fas fa-chevron-right"></i></li>
                         <li onclick="mhNavigate('group');">Notre Groupe<i class="fas fa-chevron-right"></i></li>
                         <li onclick="openAnimatedLink(this, 'contact.htm');">Contact<i class="fas fa-external-link-square-alt"></i></li>
-                        <li>Version Anglaise<i class="fas fa-external-link-square-alt"></i></li>
+                        <li onclick="switchToEn();">Version Anglaise<i class="fas fa-external-link-square-alt"></i></li>
                     </ul>
                 </div>
             </div>
@@ -145,9 +145,9 @@
             <h1>Notre Groupe</h1>
             <div class="button" onclick="openAnimatedLink(this, 'aboutus.htm');">En savoir plus</div>
         </div>
-        <p>L’Alliance, une association internationale dédiée à la réflexion économique et financière, a été fondée par des étudiants issus d’institutions diverses avec un objectif commun : promouvoir le développement intellectuel autour des sujets économiques et financiers.</p>
-        <p>La diversité des profils au sein de notre association (ingénieurs, financiers, étudiants de différentes disciplines) favorise un enrichissement mutuel des connaissances, permettant une approche plus complète et approfondie des sujets abordés.</p>
-        <p>La communauté de L'Alliance offre un accès à un réseau élargi, composé de professionnels évoluant dans des secteurs variés, ouvrant ainsi la porte à de nouvelles opportunités de collaboration et d’échange. Nos membres bénéficient également d’outils et de ressources spécialisés pour approfondir leurs connaissances et se former sur des thématiques pointues. L’association permet aussi l’exploration de nouveaux domaines : même un professionnel en CDI peut élargir ses horizons en découvrant des sujets qu’il ne traite pas directement dans son quotidien, comme la blockchain, la fintech ou l’intelligence artificielle appliquée à la finance.</p>
+        <p>L'Alliance est une association internationale dédiée à la réflexion économique et financière, fondée par des étudiants issus d’institutions diverses avec un objectif commun : promouvoir le développement intellectuel autour des sujets économiques et financiers.</p>
+        <p>La diversité des profils au sein de notre association, qu’il s’agisse d’ingénieurs, de financiers ou d’étudiants de différentes disciplines, favorise un enrichissement mutuel des connaissances, permettant une approche plus complète et approfondie des sujets abordés.</p>
+        <p>La communauté de L'Alliance offre un accès à un réseau élargi, composé de professionnels évoluant dans des secteurs variés, ouvrant ainsi la porte à de nouvelles opportunités de collaboration et d’échange. Nos membres bénéficient également d’outils et de ressources spécialisés pour approfondir leurs connaissances et se former sur des thématiques pointues.</p>
         <p>Nous offrons un mentorat personnalisé à chacun de nos membres tout au long de leur parcours universitaire. Les nouveaux membres sont jumelés avec des membres plus expérimentés afin de bénéficier d’un accompagnement sur mesure en matière de recrutement, d’académique et de tout autre besoin. Ces liens perdurent souvent tout au long de leur parcours universitaire.</p>
         <div class="banner" id="objective-banner">
             <img draggable="false" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg" style="object-position: 85%;" />
@@ -169,7 +169,7 @@
         <p>Être à L’Alliance, c’est être à l’avant-garde de l’innovation, de la collaboration et de l’excellence, où des individus ambitieux façonnent l’avenir de la finance et au-delà. Que vous soyez étudiant en école de commerce, en école d’ingénieur ou à l’université, il est essentiel de faire preuve de motivation et de manifester un réel intérêt pour la finance. Une expérience préalable dans le secteur constitue un atout supplémentaire, bien que non obligatoire.</p>
         <p>Afin, de candidater, veuillez remplir le questionnaire présent à la page <a onclick="openAnimatedLink(this, 'join.htm');">Nous Rejoindre</a><br />Les processus de séléction se déroulent de la façon suivante :</p>
         <ul>
-            <li>1<sup>er</sup> tour : Entretien avec un membre de l'équipe RH du groupe</li>
+            <li>1<sup>er</sup> tour : Entretien avec un membre de l'équipe ressources humaines du groupe</li>
             <li>2<sup>ème</sup> tour : Entretien avec un membre du Comité Éxécutif</li>
         </ul>
         <p>Si vous êtes déjà un professionnel du secteur, un diplomé ou faites l'objet d'une situation particulière, veuillez directement nous contacter via le <a onclick="openAnimatedLink(this, 'contact.htm')">formulaire de contact</a> en adressant un CV et votre lien LinkedIn.

@@ -44,8 +44,8 @@
                 <div onclick="openAnimatedLink(this, 'contact.htm');" onmouseover="toggleHeaderDropdown(null);">
                     <a>Contact</a>
                 </div>
-                <div>
-                    <a href="#" title="Voir le contenu en anglais">🇺🇸</a>
+                <div onclick="switchToEn();">
+                    <a title="Voir le contenu en anglais">🇺🇸</a>
                 </div>
             </div>
         </header>
@@ -59,7 +59,7 @@
                         <li onclick="mhNavigate('publications');">Publications<i class="fas fa-chevron-right"></i></li>
                         <li onclick="mhNavigate('group');">Notre Groupe<i class="fas fa-chevron-right"></i></li>
                         <li onclick="openAnimatedLink(this, 'contact.htm');">Contact<i class="fas fa-external-link-square-alt"></i></li>
-                        <li>Version Anglaise<i class="fas fa-external-link-square-alt"></i></li>
+                        <li onclick="switchToEn();">Version Anglaise<i class="fas fa-external-link-square-alt"></i></li>
                     </ul>
                 </div>
             </div>

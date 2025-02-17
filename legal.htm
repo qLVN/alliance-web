@@ -20,7 +20,7 @@
         
         <script src="js/main.js"></script>
         
-        <title>Legal – L'ALLIANCE Group</title>
+        <title>Mentions Légales – L'ALLIANCE Group</title>
     </head>
     <body>
         <header>
@@ -42,8 +42,8 @@
                 <div onclick="openAnimatedLink(this, 'contact.htm');" onmouseover="toggleHeaderDropdown(null);">
                     <a>Contact</a>
                 </div>
-                <div>
-                    <a href="#" title="Voir le contenu en anglais">🇺🇸</a>
+                <div onclick="switchToEn();">
+                    <a title="Voir le contenu en anglais">🇺🇸</a>
                 </div>
             </div>
         </header>
@@ -57,7 +57,7 @@
                         <li onclick="mhNavigate('publications');">Publications<i class="fas fa-chevron-right"></i></li>
                         <li onclick="mhNavigate('group');">Notre Groupe<i class="fas fa-chevron-right"></i></li>
                         <li onclick="openAnimatedLink(this, 'contact.htm');">Contact<i class="fas fa-external-link-square-alt"></i></li>
-                        <li>Version Anglaise<i class="fas fa-external-link-square-alt"></i></li>
+                        <li onclick="switchToEn();">Version Anglaise<i class="fas fa-external-link-square-alt"></i></li>
                     </ul>
                 </div>
             </div>
@@ -112,7 +112,7 @@
         </div>
         <div class="content-banner">
             <div class="title">Mentions légales</div>
-            <!-- <div class="subtitle"></div> -->
+            <div class="subtitle">Une interrogation ? N'hésitez pas à nous contacter.</div>
             <img src="assets/material/backdrop.png" />
             <img src="assets/material/backdrop.png" />
         </div>

@@ -139,3 +139,11 @@ function mhNavigate(location) {
   document.getElementById('mh-' + location).style.pointerEvents = 'all';
   document.getElementById('mh-' + location).style.marginLeft = '0px';
 }
+
+function switchToEn() {
+  window.open('https://en.lalliancegroup.com' + location.pathname, '_top');
+}
+
+function switchToFr() {
+  window.open('https://fr.lalliancegroup.com' + location.pathname, '_top');
+}
