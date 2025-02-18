@@ -16,9 +16,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+::selection {
+    background: var(--secondaryRed);
+    color: white;
+}
+
 a {
     color: var(--secondaryRed);
     cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -497,7 +506,7 @@ header #burger.clicked div:last-of-type {
     transition: 0.2s ease;
 }
 
-#mobile-header .mh-content#mh-main {
+#mobile-header.displayed .mh-content#mh-main {
     opacity: 1;
     pointer-events: all;
 
@@ -694,8 +703,8 @@ footer .link-container li {
 
 footer .link-container li:hover {
     text-decoration: underline;
-    letter-spacing: 0.2px;
     list-style-type: disc;
+    font-weight: 600;
 }
 
 footer .copyright:hover {

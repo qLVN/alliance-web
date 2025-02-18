@@ -19,6 +19,10 @@
             flex-direction: column;
 }
 
+.carousel:last-child {
+    margin-right: 15px;
+}
+
 .carousel .item-wrapper {
     height: calc(100% - 30px);
     display: inline-block;
@@ -46,4 +50,14 @@
 .carousel .item-wrapper div.sub {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
+    font-size: 0.7em;
 }
+
+/* SCREEN SIZE COMPATIBILITY */
+
+@media only screen and (max-width: 800px) {
+    .carousel {
+        width: 100vw;
+        margin-left: -30px;
+    }
+  }
