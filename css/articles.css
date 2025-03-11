@@ -3,7 +3,7 @@
 .content-wrapper .tip-container {
     position: relative;
     margin-bottom: 40px;
-    border: 1px solid gainsboro;
+    border: 1px solid var(--gray1);
     border-radius: 5px;
     padding: 15px 20px;
     height: 80px;
@@ -34,7 +34,7 @@
     position: absolute;
     bottom: -10px;
     background-color: white;
-    border: 1px solid gainsboro;
+    border: 1px solid var(--gray1);
     right: 10px;
     color: var(--gray2);
     font-size: 9pt;
@@ -51,7 +51,7 @@
 
 .content-wrapper .tip-container .button:hover {
     background-color: var(--gray3);
-    border-color: gainsboro;
+    border-color: var(--gray1);
 }
 
 .content-wrapper .tip-container .button:active {
@@ -65,9 +65,45 @@
 .content-wrapper .article-container {
     position: relative;
     padding: 60px 20px;
-    border: 1px solid gainsboro;
+    border: 1px solid var(--gray1);
     border-radius: 5px;
     margin: 10px 0px 50px 0px;
+}
+
+.content-wrapper .article-container.small {
+    max-height: 300px;
+    overflow-y: hidden;
+}
+
+.content-wrapper .article-container .expand {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffffed;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer;
+    border-top: 1px solid var(--gray1);
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 500;
+    color: var(--secondaryRed);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+
+    -webkit-transition: 0.1s ease;
+
+    -o-transition: 0.1s ease;
+
+    transition: 0.1s ease;
+}
+
+.content-wrapper .article-container .expand:hover {
+    background-color: var(--gray3);
+}
+
+.content-wrapper .article-container .expand:active {
+    background-color: var(--gray1);
 }
 
 .content-wrapper .article-container .title {
@@ -83,17 +119,33 @@
     text-align: justify;
 }
 
+.content-wrapper .article-container .content img {
+    max-width: 100%;
+}
+
 .content-wrapper .article-container .date {
     position: absolute;
     bottom: -10px;
     background-color: white;
-    border: 1px solid gainsboro;
+    border: 1px solid var(--gray1);
     right: 10px;
     color: var(--gray2);
     font-size: 9pt;
     padding: 3px 10px;
     border-radius: 5px;
     cursor: default;
+
+    z-index: 1;
+
+    -webkit-transition: 0.1s ease;
+
+    -o-transition: 0.1s ease;
+
+    transition: 0.1s ease;
+}
+
+.content-wrapper .article-container.small .date {
+    bottom: 10px;
 }
 
 .content-wrapper .article-container .author-wrapper {
@@ -105,6 +157,8 @@
     border: 1px solid transparent;
     border-radius: 5px;
 
+    z-index: 1;
+
     -webkit-transition: 0.1s ease;
 
     -o-transition: 0.1s ease;
@@ -112,9 +166,13 @@
     transition: 0.1s ease;
 }
 
+.content-wrapper .article-container.small .author-wrapper {
+    bottom: 10px;
+}
+
 .content-wrapper .article-container .author-wrapper:hover {
     background-color: var(--gray3);
-    border-color: gainsboro;
+    border-color: var(--gray1);
 }
 
 .content-wrapper .article-container .author-wrapper:active {
@@ -124,7 +182,7 @@
 .content-wrapper .article-container .author-wrapper img {
     width: 50px;
     border-radius: 5px;
-    border: 2px solid gainsboro;
+    border: 2px solid var(--gray1);
 }
 
 .content-wrapper .article-container .author-wrapper div {

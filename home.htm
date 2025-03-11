@@ -1,12 +1,23 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3VCE7Y10V1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3VCE7Y10V1');
+        </script>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
 
         <meta content="L'ALLIANCEGroup.com" property="og:title">
         <meta content="« L'excellence au cœur de la finance et l'économie »" property="og:description">
         <meta content="https://fr.lalliancegroup.com/" property="og:url">
-        <meta content="https://fr.lalliancegroup.com/assets/material/logo.png" property="og:image">
+        <meta content="https://cdn.lalliancegroup.com/assets/material/logo.png" property="og:image">
         <meta content="#FFFFFF" data-react-helmet="true" name="theme-color">
        
         <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -15,8 +26,8 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
         <link rel="manifest" href="assets/favicon/site.webmanifest">
        
-        <link rel="stylesheet" href="css\main.css">
-        <link rel="stylesheet" href="css\home.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/home.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +42,7 @@
     <body>
         <header>
             <div class="link-wrapper" onclick="openAnimatedLink(this, 'home.htm');">
-                <img src="assets/material/logo.png" draggable="false" />
+                <img src="https://cdn.lalliancegroup.com/assets/material/logo.png" draggable="false" />
                 <div class="title">L'ALLIANCE</div>
             </div>
             <div id="burger" onclick="toggleMobileHeader()">
@@ -56,7 +67,7 @@
         <div id="mobile-header">
             <div class="mh-content" id="mh-main">
                 <div class="head">
-                    <img src="assets/material/backArrow.png" draggable="false" style="opacity: 0;" />
+                    <img src="https://cdn.lalliancegroup.com/assets/material/backArrow.png" draggable="false" style="opacity: 0;" />
                     <div class="title"></div>
                     <ul>
                         <li onclick="openAnimatedLink(this, 'home.htm');">Accueil<i class="fas fa-external-link-square-alt"></i></li>
@@ -69,7 +80,7 @@
             </div>
             <div class="mh-content" id="mh-publications">
                 <div class="head" onclick="mhNavigate('main');">
-                    <img src="assets/material/backArrow.png" draggable="false" />
+                    <img src="https://cdn.lalliancegroup.com/assets/material/backArrow.png" draggable="false" />
                     <div class="title">Publications</div>
                     <ul>
                         <li onclick="openAnimatedLink(this, 'financialmarkets.htm');">Finances de Marché<i class="fas fa-external-link-square-alt"></i></li>
@@ -81,7 +92,7 @@
             </div>
             <div class="mh-content" id="mh-group">
                 <div class="head" onclick="mhNavigate('main');">
-                    <img src="assets/material/backArrow.png" draggable="false" />
+                    <img src="https://cdn.lalliancegroup.com/assets/material/backArrow.png" draggable="false" />
                     <div class="title">Notre Groupe</div>
                     <ul>
                         <li onclick="openAnimatedLink(this, 'aboutus.htm');">Qui sommes-nous ?<i class="fas fa-external-link-square-alt"></i></li>
@@ -103,7 +114,7 @@
                     <li onclick="openAnimatedLink(this, 'coding.htm');">Développement Informatique</li>
                     <li onclick="openAnimatedLink(this, 'ecoanalysis.htm');">Analyses Économiques</li>
                 </div>
-                <img src="assets/material/bgCrest.png" />
+                <img src="https://cdn.lalliancegroup.com/assets/material/bgCrest.png" />
             </div>
             <div id="team-dropdown" class="group">
                 <div class="title">Notre Groupe</div>
@@ -113,7 +124,7 @@
                     <li onclick="openAnimatedLink(this, 'join.htm');">Nous Rejoindre</li>
                     <li onclick="openAnimatedLink(this, 'contact.htm');">Nous Contacter</li>
                 </div>
-                <img src="assets/material/bgCrest.png" />
+                <img src="https://cdn.lalliancegroup.com/assets/material/bgCrest.png" />
             </div>
         </div>
         <div class="home-banner">
@@ -123,31 +134,31 @@
                 <a onclick="openLink('https://www.linkedin.com/company/l-alliance-association', 'newpage');"><i class="fab fa-linkedin"></i>LinkedIn</a>
                 <a onclick="openAnimatedLink(this, 'aboutus.htm');">En savoir plus</a>
             </div>
-            <img src="assets/material/backdrop.png" />
-            <img src="assets/material/backdrop.png" />
+            <img src="https://cdn.lalliancegroup.com/assets/material/backdrop.png" />
+            <img src="https://cdn.lalliancegroup.com/assets/material/backdrop.png" />
         </div>
         <div class="quickinfo-wrapper">
             <div class="quickinfo" onclick="scrollToElementWithId('group-banner');">
-                <img draggable="false" src="assets/material/images/q1.jpeg" link="https://cdn12.picryl.com/photo/2016/12/31/business-presentation-tables-business-finance-79d013-1024.jpg" />
+                <img draggable="false" src="https://cdn.lalliancegroup.com/assets/material/images/q1.jpg" link="https://images.unsplash.com/photo-1621459287809-d7b86ccf69f8" />
                 <div class="gradient" style="background: linear-gradient(180deg, rgba(255,255,255,0.18949586670605745) 0%, rgb(184, 86, 70) 76%, rgb(160, 64, 26) 100%);"></div>
                 <div class="title">Notre <b>Groupe</b></div>
                 <i class="fas fa-chevron-down"></i>
             </div>
             <div class="quickinfo" onclick="scrollToElementWithId('objective-banner');">
-                <img draggable="false" src="assets/material/images/q2.jpeg" link="https://st3.depositphotos.com/3343629/13870/i/450/depositphotos_138706104-stock-photo-climber-reaches-out-to-his.jpg" />
+                <img draggable="false" src="https://cdn.lalliancegroup.com/assets/material/images/q2.jpeg" link="https://st3.depositphotos.com/3343629/13870/i/450/depositphotos_138706104-stock-photo-climber-reaches-out-to-his.jpg" />
                 <div class="gradient" style="background: linear-gradient(180deg, rgba(255,255,255,0.18949586670605745) 0%, rgb(184, 86, 70) 76%, rgb(160, 64, 26) 100%);"></div>
                 <div class="title">Un <b>Objectif</b></div>
                 <i class="fas fa-chevron-down"></i>
             </div>
             <div class="quickinfo" onclick="scrollToElementWithId('join-banner');">
-                <img draggable="false" src="assets/material/images/q3.jpeg" link="https://images.unsplash.com/photo-1548783300-70b41bc84f56?q=80&w=1287&auto=formatq" />
+                <img draggable="false" src="https://cdn.lalliancegroup.com/assets/material/images/q3.jpeg" link="https://images.unsplash.com/photo-1548783300-70b41bc84f56?q=80&w=1287&auto=formatq" />
                 <div class="gradient" style="background: linear-gradient(180deg, rgba(255,255,255,0.18949586670605745) 0%, rgb(184, 86, 70) 76%, rgb(160, 64, 26) 100%);"></div>
                 <div class="title">Nous <b>Rejoindre</b></div>
                 <i class="fas fa-chevron-down"></i>
             </div>
         </div>
         <div class="banner" id="group-banner">
-            <img draggable="false" src="assets/material/images/h1.jpeg" link="https://images.pexels.com/photos/842948/pexels-photo-842948.jpeg" style="object-position: bottom;" />
+            <img draggable="false" src="https://cdn.lalliancegroup.com/assets/material/images/h1.jpg" link="https://images.unsplash.com/photo-1597225764524-beb6e071d9ff" style="object-position: center;" />
             <h1>Notre Groupe</h1>
             <div class="button" onclick="openAnimatedLink(this, 'aboutus.htm');">En savoir plus</div>
         </div>
@@ -156,7 +167,7 @@
         <p>La communauté de L'Alliance offre un accès à un réseau élargi, composé de professionnels évoluant dans des secteurs variés, ouvrant ainsi la porte à de nouvelles opportunités de collaboration et d’échange. Nos membres bénéficient également d’outils et de ressources spécialisés pour approfondir leurs connaissances et se former sur des thématiques pointues.</p>
         <p>Nous offrons un mentorat personnalisé à chacun de nos membres tout au long de leur parcours universitaire. Les nouveaux membres sont jumelés avec des membres plus expérimentés afin de bénéficier d’un accompagnement sur mesure en matière de recrutement, d’académique et de tout autre besoin. Ces liens perdurent souvent tout au long de leur parcours universitaire.</p>
         <div class="banner" id="objective-banner">
-            <img draggable="false" src="assets/material/images/h2.jpg" link="https://upload.wikimedia.org/wikipedia/commons/3/36/90_boulevard_Flandrin%2C_Paris_16e.jpg" style="object-position: top;" />
+            <img draggable="false" src="https://cdn.lalliancegroup.com/assets/material/images/h2.jpg" link="https://images.unsplash.com/photo-1546594727-92ec1558ec84" style="object-position: 0%;" />
             <h1>Un Objectif</h1>
             <div class="button" onclick="openAnimatedLink(this, 'aboutus.htm');">En savoir plus</div>
         </div>
@@ -168,7 +179,7 @@
         </ul>
         <p>Ensemble, nous construisons une communauté soudée, prête à relever les défis du paysage financier mondial.</p>
         <div class="banner" id="join-banner">
-            <img draggable="false" src="assets/material/images/h3.jpeg" link="https://media.architecturaldigest.com/photos/5b0ef7b575a4f940de3da992/16:9/w_2991,h_1682,c_limit/GettyImages-540372933.jpg" />
+            <img draggable="false" src="https://cdn.lalliancegroup.com/assets/material/images/h3.jpg" link="https://images.unsplash.com/photo-1606836591695-4d58a73eba1e" style="object-position: center;" />
             <h1>Nous Rejoindre</h1>
             <div class="button" onclick="openAnimatedLink(this, 'join.htm');">En savoir plus</div>
         </div>
@@ -181,7 +192,7 @@
         <p>Si vous êtes déjà un professionnel du secteur, un diplomé ou faites l'objet d'une situation particulière, veuillez directement nous contacter via le <a onclick="openAnimatedLink(this, 'contact.htm')">formulaire de contact</a> en adressant un CV et votre lien LinkedIn.
         <div class="centered-button" onclick="openAnimatedLink(this, 'join.htm');">On y va ?</div>
         <footer>
-            <img class="side-img" src="assets/material/logo_outlined.png" />
+            <img class="side-img" src="https://cdn.lalliancegroup.com/assets/material/logo_outlined.png" />
             <div class="link-container">
                 <li onclick="openAnimatedLink(this, 'home.htm');">Accueil</li>
                 <li onclick="openAnimatedLink(this, 'legal.htm');">Mentions Légales</li>
@@ -197,10 +208,10 @@
                 <li>Link</li> -->
             </div>
             <div class="copyright"  onclick="openLink('https://github.com/qLVN', 'newpage');" title="Ouvrir la page GitHub">© 2025 lvn. All rights reserved.</div>
-            <img class="back-img" src="assets/material/bgCrest.png" />
+            <img class="back-img" src="https://cdn.lalliancegroup.com/assets/material/bgCrest.png" />
         </footer>
         <div id="navigation-view">
-            <img src="assets/material/logo.png" id="navigation-icon" />
+            <img src="https://cdn.lalliancegroup.com/assets/material/logo.png" id="navigation-icon" />
         </div>
     </body>
 </html>
